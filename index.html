@@ -245,10 +245,25 @@
                 </a>
 
                 <a href="https://lacroux.github.io/Barber-a-Alura-Version-Final/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
-                    <i class="fas fa-project-diagram text-blue-400 text-xl"></i>
+                    <i class="fas fa-file-code text-orange-400 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-white">Barbería Alura</p>
                         <p class="text-[10px] text-slate-500">Proyecto Barbería Alura Latam y Oracle Next Education.</p>
+                    </div>
+                </a>
+
+                <a href="https://lacroux.github.io/juego-numero-secreto/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                    <i class="fas fa-project-diagram text-blue-400 text-xl"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Juego del Número Secreto - JS Game</p>
+                        <p class="text-[10px] text-slate-500">Inspiración: Basado en los desafíos de lógica de programación de Alura / Oracle Next Education.</p>
+                    </div>
+                </a>
+                <a href="https://lacroux.github.io/ProyectoFinal2.0//" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                    <i class="fas fa-file-code text-orange-400 text-xl"></i></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Joyería E&Mjoyería</p>
+                        <p class="text-[10px] text-slate-500">Proyecto Propio</p>
                     </div>
                 </a>
 
@@ -339,7 +354,7 @@
             <div class="inline-block glass p-8 rounded-3xl border border-cyan-500/30">
                 <h3 class="text-2xl font-bold text-white mb-4 uppercase tracking-widest">Descargar mi Perfil Completo</h3>
                 <p class="text-slate-400 mb-8 max-w-md">Obtén mi Curriculum Vitae actualizado en formato PDF para conocer más detalles sobre mi trayectoria técnica.</p>
-                <a href="Yobany_LaCruz_CV.pdf" download onclick="notificarDescarga()" 
+                <a href="Yobany_LaCruz_CV.pdf" download 
                     class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-black px-10 py-4 rounded-xl hover:scale-105 transition-all shadow-xl shadow-cyan-500/20">
                     DESCARGAR CV <i class="fas fa-file-download text-xl"></i>
                 </a>
@@ -396,10 +411,6 @@
         const formContainer = document.getElementById("form-container");
         const successBox = document.getElementById("success-box");
         const submitBtn = document.getElementById("submit-button");
-
-        function notificarDescarga() {
-            alert("Curriculum Vitae descargado con éxito.");
-        }
 
         async function handleFormSubmit(event) {
             event.preventDefault();
