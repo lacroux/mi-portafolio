@@ -54,8 +54,9 @@
             <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
                 <a href="#inicio" class="hover:text-cyan-400 transition">Inicio</a>
                 <a href="#DOCUMENTACIÓN" class="hover:text-cyan-400 transition">Proyectos</a>
-                <a href="#proyectos-videos" class="hover:text-cyan-400 transition">Videos de Proyectos Tecnicos</a>
+                <a href="#proyectos-videos" class="hover:text-cyan-400 transition">Videos</a>
                 <a href="#estudios" class="hover:text-cyan-400 transition">Estudios y Certificaciones</a>
+                <a href="#osint-hub" class="hover:text-cyan-400 transition">OSINT Hub</a>
                 <a href="#contacto" class="text-cyan-400 border border-cyan-400/50 px-4 py-2 rounded-full hover:bg-cyan-400 hover:text-slate-950 transition">Contacto</a>
             </div>
         </div>
@@ -248,9 +249,103 @@
                         <p class="text-[10px] text-slate-500">Proyecto ENE 2025 del instituto profesional AIEP</p>
                     </div>
                 </a>
+                <a href="https://start.me/p/9onGdR/souf6x-osint" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition group">
+
+            <div class="flex-shrink-0 w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center border border-cyan-500/20 group-hover:border-cyan-500/50 transition-colors">
+                <i class="fas fa-search-plus text-cyan-400 text-xl"></i>
+            </div>
+            <div>
+                <p class="text-sm font-bold text-white flex items-center gap-2">
+                    Plataforma de Búsqueda OSINT 
+                    <span class="text-[8px] bg-cyan-500/20 text-cyan-400 px-1.5 py-0.5 rounded uppercase tracking-widest">Externo</span>
+                </p>
+                <p class="text-[10px] text-slate-500">Recursos de Inteligencia de Fuentes Abiertas y Ciberinvestigación.</p>
+            </div>
+            <div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-external-link-alt text-cyan-500 text-xs"></i>
+            </div>
+                </a>
+                <a href="https://linux-shell-iota.vercel.app/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition group">
+
+            <div class="flex-shrink-0 w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center border border-cyan-500/20 group-hover:border-cyan-500/50 transition-colors">
+                <i class="fas fa-search-plus text-cyan-400 text-xl"></i>
+            </div>
+            <div>
+                <p class="text-sm font-bold text-white flex items-center gap-2">
+                    Guia Comandos Básicos Kali Linux
+                    <span class="text-[8px] bg-cyan-500/20 text-cyan-400 px-1.5 py-0.5 rounded uppercase tracking-widest">Externo</span>
+                </p>
+                <p class="text-[10px] text-slate-500">Recursos de Comandos Linux.</p>
+            </div>
+            <div class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-external-link-alt text-cyan-500 text-xs"></i>
+            </div>
+                </a>
             </div>
             </div>
     </section>
+
+    <section id="osint-hub" class="py-24 bg-slate-950 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/5 blur-[120px] rounded-full"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <h2 class="text-3xl font-black text-white mb-4 flex items-center gap-4 italic uppercase text-cyan-500">
+                    <span class="h-1 w-12 bg-cyan-500"></span> OSINT HUB (En construccion)<span class="text-white text-sm font-mono ml-2 opacity-50">v1.0</span>
+                </h2>
+                <p class="text-slate-400 max-w-xl font-mono text-xs">
+                    Repositorio de herramientas de reconocimiento y auditoría de seguridad.
+                </p>
+            </div>
+
+            <div class="relative w-full md:w-80">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 font-mono text-sm">$</span>
+                <input type="text" id="osint-search" 
+                    placeholder="Filtrar herramientas..." 
+                    class="w-full bg-slate-900/80 border border-slate-700 rounded-lg py-3 pl-8 pr-4 text-cyan-400 font-mono text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/50 transition-all shadow-xl">
+            </div>
+        </div>
+
+        <div id="osint-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="osint-card glass p-6 rounded-2xl border border-slate-800 transition-all">
+                <h3 class="text-cyan-400 font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-search"></i> Identidad & Personas
+                </h3>
+                <div class="flex flex-col gap-2">
+                    <a href="https://www.social-searcher.com/" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">Social Searcher</a>
+                    <a href="https://checkusernames.com/" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">CheckUsernames</a>
+                </div>
+            </div>
+
+            <div class="osint-card glass p-6 rounded-2xl border border-slate-800 transition-all">
+                <h3 class="text-cyan-400 font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-network-wired"></i> Redes & Dominios
+                </h3>
+                <div class="flex flex-col gap-2">
+                    <a href="https://shodan.io" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">Shodan IoT</a>
+                    <a href="https://viewdns.info/" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">ViewDNS</a>
+                </div>
+            </div>
+
+            <div class="osint-card glass p-6 rounded-2xl border border-slate-800 transition-all">
+                <h3 class="text-red-400 font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-unlock-alt"></i> Fugas & Credenciales
+                </h3>
+                <div class="flex flex-col gap-2">
+                    <a href="https://haveibeenpwned.com/" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">Have I Been Pwned</a>
+                    <a href="https://intelx.io/" target="_blank" class="osint-link block text-slate-400 hover:text-white text-xs p-2 rounded bg-slate-900/50 border border-slate-800 transition">Intelligence X</a>
+                </div>
+            </div>
+            
+            </div>
+
+        <div id="no-results" class="hidden text-center py-12">
+            <i class="fas fa-ghost text-slate-700 text-4xl mb-4"></i>
+            <p class="text-slate-500 font-mono italic">No se encontraron herramientas que coincidan.</p>
+        </div>
+    </div>
+</section>
 
     <section id="proyectos-videos" class="py-24 bg-slate-900/40">
         <div class="container mx-auto px-6">
@@ -344,10 +439,18 @@
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold text-white mb-10 tracking-tighter uppercase">CERTIFICACIONES</h2>
+                <h2 class="text-3xl font-bold text-white mb-10 tracking-tighter uppercase">CERTIFICACIONES DESTACADAS</h2>
                 <div class="grid gap-4">
-                    
+
                     <a href="https://www.linkedin.com/in/yobany-la-cruz/details/certifications/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                        <i class="fab fa-linkedin-in text-purple-400 text-xl transition-transform group-hover:scale-110 group-hover:text-blue-400"></i>
+                        <div>
+                            <p class="text-sm font-bold text-white">Visualizar todas las Certificaciones</p>
+                            <p class="text-[10px] text-slate-500">Linkedin</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://verify.certiprof.com/certificado/CLPPFRSFFSY-ZVLZKVJJL-XTCMSPSWSR" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
                         <i class="fas fa-user-shield text-cyan-500 text-xl"></i>
                         <div>
                             <p class="text-sm font-bold text-white">Pentester Mentor Junior (PMJ)</p>
@@ -355,6 +458,29 @@
                         </div>
                     </a>
 
+                    <a href="https://app.kajabi.com/certificates/311ad7af" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                        <i class="fas fa-user-shield text-cyan-500 text-xl"></i>
+                        <div>
+                            <p class="text-sm font-bold text-white">Iniciando en el Mundo de la Ciberseguridad</p>
+                            <p class="text-[10px] text-slate-500">Hacker Mentor | Mar 2026</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.credly.com/badges/fef3281b-6652-49af-ba2d-3846469938a8/linked_in_profile" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                        <i class="fas fa-user-shield text-red-400 text-xl"></i>
+                        <div>
+                            <p class="text-sm font-bold text-white">Introducción al panorama de amenazas 3.0</p>
+                            <p class="text-[10px] text-slate-500">Fortinet | Mar 2026</p>
+                        </div>
+                    </a>
+                    <a href="https://proyectos.desafiolatam.com/v/wC3vcsP1VTenQEha8GagvEnw" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                        <i class="fas fa-brain text-indigo-400 text-xl"></i>
+                        <i class="fas fa-clipboard-check text-purple-400 text-xl transition-colors group-hover:text-green-300"></i>
+                        <div>
+                            <p class="text-sm font-bold text-white">Transformación digital con IA y Automatización  </p>
+                            <p class="text-[10px] text-slate-500">Desafio Latam | Feb 2026</p>
+                        </div>
+                    </a>
                     <a href="https://www.linkedin.com/in/yobany-la-cruz/details/certifications/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
                         <i class="fas fa-microchip text-purple-400 text-xl"></i>
                         <div>
@@ -363,10 +489,17 @@
                         </div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/yobany-la-cruz/details/certifications/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                    <a href="https://app.kajabi.com/certificates/3c34b16a" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
+                        <i class="fab fa-linux text-purple-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <p class="text-sm font-bold text-white">Linux para Pentesters</p>
+                            <p class="text-[10px] text-slate-500">Hacker Mentor | Oct 2025</p>
+                        </div>
+                    </a>
+                    <a href="https://app.kajabi.com/certificates/e6668512" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
                         <i class="fas fa-network-wired text-blue-400 text-xl"></i>
                         <div>
-                            <p class="text-sm font-bold text-white">Fundamentos de Redes y Linux para Pentesters</p>
+                            <p class="text-sm font-bold text-white">Fundamentos de Redes</p>
                             <p class="text-[10px] text-slate-500">Hacker Mentor | Oct 2025</p>
                         </div>
                     </a>
@@ -378,23 +511,7 @@
                             <p class="text-[10px] text-slate-500">Alura + Oracle | Sep 2025</p>
                         </div>
                     </a>
-
-                    <a href="https://www.linkedin.com/in/yobany-la-cruz/details/certifications/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
-                        <i class="fab fa-java text-orange-500 text-xl"></i>
-                        <div>
-                            <p class="text-sm font-bold text-white">Formación Java y Lógica de Programación</p>
-                            <p class="text-[10px] text-slate-500">Oracle + Alura | May 2024</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/yobany-la-cruz/details/certifications/" target="_blank" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 flex items-center space-x-4 card-skill cursor-pointer transition">
-                        <i class="fas fa-code text-green-400 text-xl"></i>
-                        <div>
-                            <p class="text-sm font-bold text-white">Curso Desarrollo web</p>
-                            <p class="text-[10px] text-slate-500">Coder House | Ago 2022</p>
-                        </div>
-                    </a>
-
+                    
                 </div>
             </div>
         </div>
@@ -498,5 +615,45 @@
             submitBtn.disabled = false;
         }
     </script>
+    <script>
+    document.getElementById('osint-search').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.osint-card');
+        const noResults = document.getElementById('no-results');
+        let totalVisible = 0;
+
+        cards.forEach(card => {
+            const links = card.querySelectorAll('.osint-link');
+            const categoryTitle = card.querySelector('h3').innerText.toLowerCase();
+            let cardHasMatch = false;
+
+            // Revisamos cada link dentro de la tarjeta
+            links.forEach(link => {
+                const linkText = link.innerText.toLowerCase();
+                if (linkText.includes(searchTerm) || categoryTitle.includes(searchTerm)) {
+                    link.style.display = 'block';
+                    cardHasMatch = true;
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+
+            // Si hay coincidencia, mostramos la tarjeta, si no, la ocultamos
+            if (cardHasMatch) {
+                card.style.display = 'block';
+                totalVisible++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Mostrar mensaje si no hay nada
+        if (totalVisible === 0) {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+        }
+    });
+</script>
 </body>
 </html>
